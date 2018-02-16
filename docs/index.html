@@ -1,0 +1,23 @@
+<html>
+<meta charset="utf8"/>
+<body>
+<div id="a">
+    <input v-model="message"/>
+    <button v-on:click="increase">Increase</button>
+    <p v-text="message"></p>
+</div>
+<script>
+    new Vue({
+        el: '#a',
+        data: {
+            message: 1
+        },
+        methods:{
+            increase(){
+                this.message += 1
+            }
+        }
+    })
+</script>
+</body>
+</html>
