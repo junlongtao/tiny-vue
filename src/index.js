@@ -1,3 +1,7 @@
+import {toArray} from './util'
+import lifecycle from './lifecycle'
+import state from './state'
+
 class Vue{
     constructor(options){
         this.init(options)
