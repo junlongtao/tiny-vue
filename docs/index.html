@@ -1,19 +1,23 @@
+<!DOCTYPE html>
 <html>
-<meta charset="utf8"/>
+<head>
+    <meta charset="utf8"/>
+</head>
 <body>
 <div id="a">
     <input v-model="message"/>
     <button v-on:click="increase">Increase</button>
     <p v-text="message"></p>
 </div>
+<script src="../src/vue.js"></script>
 <script>
     new Vue({
         el: '#a',
         data: {
             message: 1
         },
-        methods:{
-            increase(){
+        methods: {
+            increase() {
                 this.message += 1
             }
         }
