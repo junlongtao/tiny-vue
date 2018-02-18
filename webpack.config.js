@@ -2,11 +2,11 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-    entry: './src/vue.js',
+    entry: './src/Vue.js',
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',
-        filename: 'vue.js'
+        filename: 'Vue.js'
     },
     module: {
         rules: [
