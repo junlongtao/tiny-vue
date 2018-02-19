@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77fa73e0-9de2-4dbf-bc74-ea86a837129a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/directives/bind.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/directives/model.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/directives/on.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/directives/text.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webpack.config.docs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webpack.server.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/Dep.js" afterPath="$PROJECT_DIR$/src/Dep.js" />
-      <change beforePath="$PROJECT_DIR$/src/Vue.js" afterPath="$PROJECT_DIR$/src/Vue.js" />
-      <change beforePath="$PROJECT_DIR$/src/Watcher.js" afterPath="$PROJECT_DIR$/src/Watcher.js" />
-      <change beforePath="$PROJECT_DIR$/src/complie.js" afterPath="$PROJECT_DIR$/src/complie.js" />
-      <change beforePath="$PROJECT_DIR$/src/observer.js" afterPath="$PROJECT_DIR$/src/observer.js" />
-      <change beforePath="$PROJECT_DIR$/src/state.js" afterPath="$PROJECT_DIR$/src/state.js" />
-      <change beforePath="$PROJECT_DIR$/src/util.js" afterPath="$PROJECT_DIR$/src/util.js" />
-    </list>
+    <list default="true" id="77fa73e0-9de2-4dbf-bc74-ea86a837129a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -57,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/src/Vue.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -69,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/src/Watcher.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="460">
-              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+              <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -236,12 +217,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518785011909</updated>
-      <workItem from="1518785014659" duration="18454000" />
+      <workItem from="1518785014659" duration="18573000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18454000" />
+    <option name="totallyTimeSpent" value="18573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1394" height="877" extended-state="6" />
@@ -426,7 +407,7 @@
         <state relative-caret-position="322">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -442,7 +423,7 @@
     <entry file="file://$PROJECT_DIR$/src/Watcher.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -450,7 +431,7 @@
     <entry file="file://$PROJECT_DIR$/src/Vue.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
