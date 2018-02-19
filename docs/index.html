@@ -9,19 +9,5 @@
     <button v-on:click="increase">Increase</button>
     <p v-text="message"></p>
 </div>
-<script src="../src/Vue.js"></script>
-<script>
-    new Vue({
-        el: '#a',
-        data: {
-            message: 1
-        },
-        methods: {
-            increase() {
-                this.message += 1
-            }
-        }
-    })
-</script>
 </body>
 </html>

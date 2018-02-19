@@ -5,7 +5,6 @@ export default function Dep(){
     this.subs = []
 }
 
-
 Dep.target = null
 
 Dep.prototype.addSub = function(){

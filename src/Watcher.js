@@ -1,6 +1,6 @@
 import Dep from './Dep'
 
-let ui = 0
+let uid = 0
 
 export default function Watcher(vm, expOrFn, cb) {
     vm._watchers.push(this)

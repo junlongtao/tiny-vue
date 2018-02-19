@@ -1,4 +1,4 @@
-import {observe} from './observe'
+import {observe} from './observer'
 
 export default function (Vue) {
     Object.defineProperty(Vue.prototype, '$data', {

@@ -5,7 +5,7 @@ import dirModel from './directives/model'
 const onRE = /^v-on:|^@/
 const modelRE = /^v-model/
 const textRE = /^v-text/
-const dirAttrRE = /^v-([^:]+)(?:$|:(.*)$/
+const dirAttrRE = /^v-([^:]+)(?:$|:(.*)$)/
 
 export const compileDirectives = function (el, attrs) {
     if (!attrs) return undefined
@@ -64,15 +64,19 @@ function makeNodeLinkFn(directives) {
 
 //only for the root element
 export const compile = function (el, options) {
-    if (el.hasChildNodes()) return function (vm, el) {
-        const nodeLink = compileNode(el, options)
-        const childLink = compileNodeList(el.childNodes, options)
-        nodeLink && nodeLink(vm, el)
-        childLink && childLink(vm, el)
-        vm._directives.forEach(v => {
-            v._bind()
-        })
-    } else return function (vm, el) {
+    if (el.hasChildNodes()) {
+        return function (vm, el) {
+            const nodeLink = compileNode(el, options)
+            const childLink = compileNodeList(el.childNodes, options)
+            nodeLink && nodeLink(vm, el)
+            childLink && childLink(vm, el)
+            vm._directives.forEach(v => {
+                v._bind()
+            })
+        }
+    }
+
+    return function (vm, el) {
         compileNode(el, options)
         vm._directives.forEach(v => {
             v._bind()
@@ -81,28 +85,28 @@ export const compile = function (el, options) {
 }
 
 
-function compileNodeList(nodeList, options){
+function compileNodeList(nodeList, options) {
     const links = []
-    for(var i=0, len=nodeList.length; i<len; i++){
+    for (var i = 0, len = nodeList.length; i < len; i++) {
         const el = nodeList[i]
         let link = compileNode(el, options)
         link && links.push(link)
-        if(el.hasChildNodes()){
+        if (el.hasChildNodes()) {
             link = compileNodeList(el.childNodes, options)
             link && links.push(link)
         }
     }
 
-    return function(vm,el){
+    return function (vm, el) {
         let i = links.length
-        while(i--){
-            links[i](vm,el)
+        while (i--) {
+            links[i](vm, el)
         }
     }
 }
 
 
-function compileNode(el, options){
+function compileNode(el, options) {
     return compileDirectives(el, el.attributes)
 }
 

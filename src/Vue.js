@@ -29,3 +29,5 @@ state(Vue)
 lifecycle(Vue)
 
 window.Vue = Vue
+
+export default Vue
