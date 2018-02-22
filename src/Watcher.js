@@ -36,6 +36,13 @@ Watcher.prototype.run = function () {
     }
 }
 
+Watcher.prototype.get = function(){
+    Dep.target = this
+    const value = this.getter.call(this.vm, this.vm)
+    Dep.target = null
+    return value
+}
+
 Watcher.prototype.set = function () {
     return this.setter.call(this.vm, this.vm, value)
 }
