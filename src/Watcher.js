@@ -48,7 +48,7 @@ Watcher.prototype.set = function () {
 }
 
 Watcher.prototype.addDep = function (dep) {
-    if (!this.depIds.has(dpe.id)) {
+    if (!this.depIds.has(dep.id)) {
         this.deps.push(dep)
         this.depIds.add(dep.id)
         dep.addSub(this)

@@ -39,7 +39,7 @@ export default function (Vue) {
             get: function proxyGetter() {
                 return self._data[key]
             },
-            set: function proxyGetter(val){
+            set: function proxySetter(val){
                 self._data[key] = val
             }
         })

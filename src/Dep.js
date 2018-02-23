@@ -7,7 +7,7 @@ export default function Dep(){
 
 Dep.target = null
 
-Dep.prototype.addSub = function(){
+Dep.prototype.addSub = function(sub){
     this.subs.push(sub)
 }
 

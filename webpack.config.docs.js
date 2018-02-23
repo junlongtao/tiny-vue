@@ -36,8 +36,7 @@ var config = {
             template: './docs/index.html',
             inject: 'body',
             hash: true
-        }),
-        new webpack.optimize.CommonsChunkPlugin(['vendors', 'citydata'])
+        })
     ]
 }
 

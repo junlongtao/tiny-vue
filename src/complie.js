@@ -18,6 +18,7 @@ export const compileDirectives = function (el, attrs) {
         const name = attr.name
         const value = attr.value
 
+
         let arg = name
         if (name.match(dirAttrRE)) {
             if (onRE.test(name)) {

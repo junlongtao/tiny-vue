@@ -1,4 +1,4 @@
-import Dep from './dep'
+import Dep from './Dep'
 
 function Observer(value) {
     this.value = value
