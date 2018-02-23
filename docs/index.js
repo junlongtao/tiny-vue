@@ -2,11 +2,11 @@ import Vue from '../src/Vue'
 new Vue({
     el: '#a',
     data: {
-        message: 1
+        count: 1
     },
     methods: {
         increase() {
-            this.message += 1
+            this.count += 1
         }
     }
 })

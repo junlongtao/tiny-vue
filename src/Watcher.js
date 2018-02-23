@@ -43,7 +43,7 @@ Watcher.prototype.get = function(){
     return value
 }
 
-Watcher.prototype.set = function () {
+Watcher.prototype.set = function (value) {
     return this.setter.call(this.vm, this.vm, value)
 }
 

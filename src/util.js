@@ -3,10 +3,11 @@ export function toArray(list, start) {
 }
 
 export function extend(to, from){
-    var keys = Object.keys(from)
-    var i = keys.length
-    while(i--){
-        to[keys[i]] = from[keys[i]]
-    }
-    return to
+    // var keys = Object.keys(from)
+    // var i = keys.length
+    // while(i--){
+    //     to[keys[i]] = from[keys[i]]
+    // }
+    // return to
+    return Object.assign(to, from)
 }
