@@ -44,6 +44,7 @@ class Vue {
             })
         }
 
+        console.log(this)
         observe(this._data, this)
     }
 
@@ -53,7 +54,6 @@ class Vue {
     }
 
     _bindDir(descriptor, el) {
-        console.log(this._directives)
         this._directives.push(new Directive(descriptor, this, el))
     }
 }

@@ -2,6 +2,7 @@ export default {
     bind() {
         const el = this.descriptor.el
         el.addEventListener('input', () => {
+            //this => directive
             this._watcher.set(el.value)
         })
     },

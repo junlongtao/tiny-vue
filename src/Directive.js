@@ -8,7 +8,7 @@ export default function Directive(descriptor, vm, el){
     this.expression = descriptor.expression
 }
 
-
+//bind主要逻辑
 Directive.prototype._bind = function() {
     var def = this.descriptor.def
     if (typeof def === 'function') {
@@ -31,11 +31,12 @@ Directive.prototype._bind = function() {
     }
 
 
-    var watcher = this._watcher = new Watcher(
+    var watcher = new Watcher(
         this.vm,
         this.expression,
         this._update
     )
+    this._watcher = watcher
 
     if (this.update) {
         this.update(watcher.value)

@@ -44,7 +44,6 @@ export const compileDirectives = function (el, attrs) {
                 rawValue: value,
                 expression: value
             }
-            console.log(dir)
             dirs.push(dir)
         }
     }
@@ -73,6 +72,9 @@ export const compile = function (el, options) {
             const childLink = compileNodeList(el.childNodes, options)
             nodeLink && nodeLink(vm, el)
             childLink && childLink(vm, el)
+
+
+            //遍历directives,依次_bind()
             vm._directives.forEach(v => {
                 v._bind()
             })

@@ -41,14 +41,14 @@ export function defineReactive(obj, key, val) {
     Object.defineProperty(obj, key, {
         enumerable: true,
         configurable: true,
-        get: function reactiveGetter() {
+        get() {
             var value = getter ? getter.call(obj) : val
             if (Dep.target) {
                 dep.depend()
             }
             return value
         },
-        set: function reactiveSetter(newVal) {
+        set(newVal) {
             var value = getter ? getter.call(obj) : val
             if (newVal === value) {
                 return

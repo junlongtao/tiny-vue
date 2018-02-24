@@ -1,0 +1,35 @@
+Vue {
+    $options:{el: "#a", data: {…}, methods: {…}, _containerAttrs: Array(1)}
+    count:(...)
+    increase:ƒ increase()
+    _data:{}
+    _directives:(3) [Directive, Directive, Directive]
+    //_watchers:(3) [Watcher, Watcher, Watcher]
+    $data:(...)
+    get count:ƒ proxyGetter()
+    set count:ƒ proxySetter(val)
+}
+
+
+Directive {
+    bind:ƒ bind()
+    descriptor:{el: button, name: "on", rawName: "v-on:click", def: {…}, arg: "click", …}
+    el:div#a
+    expression:"increase"
+    vm:Vue {_directives: Array(3), _watchers: Array(3), $options: {…}, increase: ƒ, _data: {…}, …}
+    _update:ƒ ()
+    _watcher:Watcher {vm: Vue, expOrFn: "increase", expression: "increase", cb: ƒ, id: 2, …}
+}
+
+Watcher {
+    cb:ƒ ()
+    depIds:Set(0) {}
+    deps:[]
+    expOrFn:"increase"
+    expression:"increase"
+    getter:() => { return vm[expOrFn]; }
+    id:2
+    setter:(vm, value) => { return vm[expOrFn] = value; }
+    value:ƒ increase()
+    vm:Vue {_directives: Array(3), _watchers: Array(3), $options: {…}, increase: ƒ, _data: {…}, …}
+}
